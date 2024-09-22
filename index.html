@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <div id="banner">     
+        <img src="imagenes/logoSeyer.jpg" width="100px" height="100px" alt="no cargo xd"> 
+        <div id="cajaTitulo">
+            <h1> <center>Captura De Calificaciones</center></h1>       
+        </div>
+    </div>
+
+    <div id="cuerpo"> 
+        <div id="contenido">
+            <div id="cajas-container">
+                <table border="">
+                    <tr><td>Nombre del Alumno </td><td> Calificacion Matematicas</td><td> Calificacion Español</td><td> Calificacion Artes</td></tr>
+                    <td><input type="text" name="nomAlu" id="nA" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios"></td><td><input type="number" name="n1" id="v1"></td><td><input type="number" name="n2" id="v2"></td><td><input type="number" name="n3" id="v3"></td></tr>
+                </table><br>
+                <input type="button" name="boton" onclick="calcularP()" value="Agregar"> 
+                <input type="button" name="boton" onclick="limpiar()" value="Limpiar">
+                
+                <table id="materias" border="">
+                    <tr><td> Alumno </td><td> Matematicas </td><td>Español</td><td>Artes</td><td>Promedio</td></tr>
+                </table> 
+            </div>    
+        </div>  
+            <div id="promedios">
+                <h2>Promedio General</h2> 
+                <table>
+                    <tr><td>Promedio Matemáticas: <span id="promMatematicas"></span></td></tr>
+                    <tr><td>Promedio Español: <span id="promEspanol"></span></td></tr>
+                    <tr><td>Promedio Artes: <span id="promArtes"></span></td></tr>
+                    <tr><td>Promedio Final: <span id="promFinal"></span></td></tr>
+                </table>
+            </div>
+    </div>
+
+    <div id="pie">
+        <p>Copyright 2024 &copy; Copyright SEYER SAPI de CV </p>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://x.com/" target="_blank">X</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div> 
+</body>
+</html>

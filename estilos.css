@@ -1,0 +1,58 @@
+h1 {
+    color: rgb(6, 64, 139);
+    text-align: center;
+    background-color: rgb(244, 130, 8);
+}
+h2 {
+    color: rgb(6, 64, 139);
+    text-align: center;
+}
+#pie {
+    background-color: aqua;
+    text-align: center;
+    position: absolute;
+    top: 90.5%;
+    width: 98%;
+}
+#res {
+    position: center;
+}
+#banner {
+    display: flex;
+    align-items: auto;
+}
+#cajaTitulo {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0px;
+}
+#cajaTabla1 {
+    width: 50%; 
+    text-align: center;  
+    align-items: center;
+    display: flex;
+}
+#promedios {
+    background-color: aqua;
+    width: auto;
+    margin-left: 250px; /* Esto empuja el div a la derecha */
+    margin-right: 20px;
+    text-align: left; /* Alinear el texto a la izquierda */
+    flex: 0.3; /* Ocupa el 30% del espacio */
+    height: 160px; /* Altura fija para el div */
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    position: relative; /* Para posicionar elementos dentro si es necesario */
+}
+#cajas-container {
+    flex-direction: column; 
+    width: auto;
+    margin-top: 0%;
+    background-color: greenyellow;
+}
+#cuerpo {
+    display: flex; /* Usar flexbox */
+}
+#contenido {
+    flex: 0.7; /* Ocupa el espacio restante */
+}
