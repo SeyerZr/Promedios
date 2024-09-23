@@ -1,18 +1,55 @@
+body {
+    /* Aquí se establece la imagen de fondo */
+    background-image: url('imagenes/1289176.jpg');
+    /* Esto hace que la imagen ocupe todo el fondo */
+    background-size: cover;
+    /* Evita que la imagen se repita */
+    background-repeat: no-repeat;
+    /* Centra la imagen */
+    background-position: center;
+    /* Establece el fondo fijo (opcional) */
+    background-attachment: fixed;
+    /* Añade un margen interior si es necesario */
+    margin: 0;
+    height: 100vh;
+}
 h1 {
-    color: rgb(6, 64, 139);
+    
+    /* Color del texto */
+    color: #ffffff;
+    /* Tamaño de la fuente */
+    font-size: 3rem;
+    /* Fuente del título */
+    font-family: 'Arial', sans-serif;
+    /* Espaciado interno */
+    padding: 20px 40px;
+    /* Alineación centrada */
     text-align: center;
-    background-color: rgb(244, 130, 8);
+    /* Fondo con gradiente */
+    -webkit-text-stroke: 2px #000000; /* Para navegadores basados en WebKit */
+   
+    text-shadow: 0 0 20px rgba(128, 0, 128, 0.8),
+                0 0 30px rgba(128, 0, 128, 0.7),
+                0 0 40px rgba(128, 0, 128, 0.6),
+                0 0 50px rgba(75, 0, 130, 0.6);
 }
 h2 {
-    color: rgb(6, 64, 139);
+    color: rgb(23, 24, 24);
     text-align: center;
+    text-shadow: 0 0 20px rgba(128, 0, 128, 0.8),
+                0 0 30px rgba(128, 0, 128, 0.7),
+                0 0 40px rgba(128, 0, 128, 0.6),
+                0 0 50px rgba(75, 0, 130, 0.6);
+}
+#tab{  
+    -webkit-text-stroke: 1px #0a0a0a;
 }
 #pie {
     background-color: aqua;
     text-align: center;
     position: absolute;
     top: 90.5%;
-    width: 98%;
+    width: 100%;
 }
 #res {
     position: center;
@@ -23,7 +60,7 @@ h2 {
 }
 #cajaTitulo {
     width: 100%;
-    padding: 10px;
+    
     margin: 10px;
     margin-top: 0px;
 }
@@ -56,3 +93,4 @@ h2 {
 #contenido {
     flex: 0.7; /* Ocupa el espacio restante */
 }
+

@@ -8,6 +8,7 @@
     <script src="funciones.js"></script>
 </head>
 <body>
+    
     <div id="banner">     
         <img src="imagenes/logoSeyer.jpg" width="100px" height="100px" alt="no cargo xd"> 
         <div id="cajaTitulo">
@@ -19,24 +20,24 @@
         <div id="contenido">
             <div id="cajas-container">
                 <table border="">
-                    <tr><td>Nombre del Alumno </td><td> Calificacion Matematicas</td><td> Calificacion Español</td><td> Calificacion Artes</td></tr>
+                    <tr><td id="tab">Nombre del Alumno </td><td id="tab"> Calificacion Matematicas</td><td id="tab"> Calificacion Español</td><td id="tab"> Calificacion Artes</td></tr>
                     <td><input type="text" name="nomAlu" id="nA" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios"></td><td><input type="number" name="n1" id="v1"></td><td><input type="number" name="n2" id="v2"></td><td><input type="number" name="n3" id="v3"></td></tr>
                 </table><br>
-                <input type="button" name="boton" onclick="calcularP()" value="Agregar"> 
-                <input type="button" name="boton" onclick="limpiar()" value="Limpiar">
+                <input type="button" id="tab" name="boton" onclick="calcularP()" value="Agregar"> 
+                <input type="button" id="tab" name="boton" onclick="limpiar()" value="Limpiar">
                 
                 <table id="materias" border="">
-                    <tr><td> Alumno </td><td> Matematicas </td><td>Español</td><td>Artes</td><td>Promedio</td></tr>
+                    <tr><td id="tab"> Alumno </td><td id="tab"> Matematicas </td><td id="tab">Español</td><td id="tab">Artes</td><td id="tab">Promedio</td></tr>
                 </table> 
             </div>    
         </div>  
             <div id="promedios">
                 <h2>Promedio General</h2> 
                 <table>
-                    <tr><td>Promedio Matemáticas: <span id="promMatematicas"></span></td></tr>
-                    <tr><td>Promedio Español: <span id="promEspanol"></span></td></tr>
-                    <tr><td>Promedio Artes: <span id="promArtes"></span></td></tr>
-                    <tr><td>Promedio Final: <span id="promFinal"></span></td></tr>
+                    <tr><td id="tab">Promedio Matemáticas: <span id="promMatematicas"></span></td></tr>
+                    <tr><td id="tab">Promedio Español: <span id="promEspanol"></span></td></tr>
+                    <tr><td id="tab">Promedio Artes: <span id="promArtes"></span></td></tr>
+                    <tr><td id="tab">Promedio Final: <span id="promFinal"></span></td></tr>
                 </table>
             </div>
     </div>
