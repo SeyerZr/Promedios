@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> Captura De Calificaciones </title>
     <link rel="stylesheet" href="estilos.css">
     <script src="funciones.js"></script>
 </head>
+<!--Defino que este es un documento HTML5 agrego el nombre de la pagina y ademas de esto agrego los enlaces del css y el js -->
 <body>
     
     <div id="banner">     
@@ -15,13 +16,13 @@
             <h1> <center>Captura De Calificaciones</center></h1>       
         </div>
     </div>
-
+<!-- En este bloque de codigo defino un div del banner de la pagina, posteriormente ingreso mi logo, luego abro otro div que es el que contendra el titulo , inserto un h1 con el titulo de la pagina y cierros ambos divs -->
     <div id="cuerpo"> 
         <div id="contenido">
             <div id="cajas-container">
                 <table border="">
                     <tr><td id="tab">Nombre del Alumno </td><td id="tab"> Calificacion Matematicas</td><td id="tab"> Calificacion Español</td><td id="tab"> Calificacion Artes</td></tr>
-                    <td><input type="text" name="nomAlu" id="nA" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios"></td><td><input type="number" name="n1" id="v1"></td><td><input type="number" name="n2" id="v2"></td><td><input type="number" name="n3" id="v3"></td></tr>
+                    <td><input type="text" name="nomAlu" id="nA" title="Solo se permiten letras y espacios"></td><td><input type="number" name="n1" id="v1"></td><td><input type="number" name="n2" id="v2"></td><td><input type="number" name="n3" id="v3"></td></tr>
                 </table><br>
                 <input type="button" id="tab" name="boton" onclick="calcularP()" value="Agregar"> 
                 <input type="button" id="tab" name="boton" onclick="limpiar()" value="Limpiar">
@@ -31,6 +32,7 @@
                 </table> 
             </div>    
         </div>  
+<!-- En este bloque de codigo defino el div del cuerpo de la pagina, despues abro otro div que se llamara contenido y uno mas que se llamara cajas container, dichos divs seran utilizados para que la estructura de la pagina este conforme a lo solicitado por el docente. Posteriormente inserto una tabla que contiene 1 fila con 4 celdas que pediran el nombre y calificaciones del alumno cierro dichas celdas e inserto una nueva fila con 4 celdas donde el usuario podra ingresar su nombre y sus calificaciones, una vez hecho esto cierro mi primer tabla y aplico un salto de linea para separar esta de los botones que declaro despues, dichos botones con el nombre de agregar que es para calcular el promedio  y otro boton de limpiar con el nombre de limpiar que se usara para limpiar los campos que llene el usuario, por ultimo agrego otra tabla con el id de materias, la cual contendra 1 fila con 5 celdas las cuales arrojara posteriormente el nombre del alumno sus calificaciones y el promedio de dichas calificaciones, despues de esto cierro la tabla, el div del contenido y el de la estructura llamado cajas container. -->
             <div id="promedios">
                 <h2>Promedio General</h2> 
                 <table>
@@ -41,12 +43,13 @@
                 </table>
             </div>
     </div>
-
+<!-- En este bloque de codigo defino el div de promedio para posteriormente en un h2 insertar el titulo de promedio general, despues inserto una tabla la cual consta de 4 filas y 2 celdas por fila, dichas celdas una contiene un texto que dira en texto el promedio de tal materia y la otra celda mandara llamar por medio del id del promedio el promedio de dicha materia. Por ultimo cierro la tabla y el div de promedios y al final cierro el div del cuerpo. -->
     <div id="pie">
         <p>Copyright 2024 &copy; Copyright SEYER SAPI de CV </p>
         <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://x.com/" target="_blank">X</a>
+        <a href="https://twitter.com/" target="_blank">X</a>
         <a href="https://instagram.com" target="_blank">Instagram</a>
     </div> 
+    <!-- Como ultimo bloque de codigo tengo definido como div el pie de pagina con el id de pie,ingreso un parrafo que contiene el copyright y hago referencia a una empresa ficticia como ejemplo, posteriormente agrego 3 referencias(links) que redirigiran al usuario a facebook, twitter o instagram dependiendo de a cual le de clic el usuario, cierro el pie de pagina y asi concluye la estructura de mi pagina web.  -->
 </body>
 </html>

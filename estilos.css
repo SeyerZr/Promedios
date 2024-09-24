@@ -7,14 +7,15 @@ body {
     background-repeat: no-repeat;
     /* Centra la imagen */
     background-position: center;
-    /* Establece el fondo fijo (opcional) */
+    /* Establece el fondo fijo */
     background-attachment: fixed;
     /* Añade un margen interior si es necesario */
     margin: 0;
+    /* Establece la altura de la ventana */
     height: 100vh;
 }
+
 h1 {
-    
     /* Color del texto */
     color: #ffffff;
     /* Tamaño de la fuente */
@@ -25,72 +26,108 @@ h1 {
     padding: 20px 40px;
     /* Alineación centrada */
     text-align: center;
-    /* Fondo con gradiente */
-    -webkit-text-stroke: 2px #000000; /* Para navegadores basados en WebKit */
-   
+    /* Agrega un borde al texto */
+    -webkit-text-stroke: 2px #000000;
+    /* Fondo con gradiente tipo neón */
     text-shadow: 0 0 20px rgba(128, 0, 128, 0.8),
                 0 0 30px rgba(128, 0, 128, 0.7),
                 0 0 40px rgba(128, 0, 128, 0.6),
                 0 0 50px rgba(75, 0, 130, 0.6);
 }
+
 h2 {
+    /* Color del texto */
     color: rgb(23, 24, 24);
+    /* Alineación centrada */
     text-align: center;
+    /* Sombra del texto con estilo neón */
     text-shadow: 0 0 20px rgba(128, 0, 128, 0.8),
                 0 0 30px rgba(128, 0, 128, 0.7),
                 0 0 40px rgba(128, 0, 128, 0.6),
                 0 0 50px rgba(75, 0, 130, 0.6);
 }
-#tab{  
+
+#tab {  
+    /* Borde del texto */
     -webkit-text-stroke: 1px #0a0a0a;
 }
+
 #pie {
+    /* Color de fondo del pie de página */
     background-color: aqua;
+    /* Alineación centrada del texto */
     text-align: center;
+    /* Posición absoluta en la parte inferior */
     position: absolute;
     top: 90.5%;
+    /* Ancho del 100% de la pantalla */
     width: 100%;
 }
+
 #res {
+    /* Alineación centrada */
     position: center;
 }
+
 #banner {
+    /* Utiliza flexbox para el contenido del banner */
     display: flex;
+    /* Alineación automática de los elementos */
     align-items: auto;
 }
 #cajaTitulo {
+    /* Ancho completo */
     width: 100%;
-    
+    /* Margen alrededor */
     margin: 10px;
+    /* Sin margen superior */
     margin-top: 0px;
 }
 #cajaTabla1 {
+    /* Ancho del 50% */
     width: 50%; 
+    /* Alineación centrada del contenido */
     text-align: center;  
+    /* Alinea los elementos del flexbox en el centro */
     align-items: center;
+    /* Usa flexbox para disposición */
     display: flex;
 }
 #promedios {
+    /* Color de fondo */
     background-color: aqua;
+    /* Ancho automático */
     width: auto;
-    margin-left: 250px; /* Esto empuja el div a la derecha */
+    /* Margen izquierdo para desplazar a la derecha */
+    margin-left: 250px;
+    /* Margen derecho */
     margin-right: 20px;
-    text-align: left; /* Alinear el texto a la izquierda */
-    flex: 0.3; /* Ocupa el 30% del espacio */
-    height: 160px; /* Altura fija para el div */
-    overflow: hidden; /* Ocultar el contenido que desborda */
-    position: relative; /* Para posicionar elementos dentro si es necesario */
+    /* Alinear el texto a la izquierda */
+    text-align: left;
+    /* Flexbox: ocupa el 30% del espacio */
+    flex: 0.3;
+    /* Altura fija para el div */
+    height: 160px;
 }
+
 #cajas-container {
+    /* Cambia la dirección de los elementos a columna */
     flex-direction: column; 
+    /* Ancho automático */
     width: auto;
+    /* Sin margen superior */
     margin-top: 0%;
+    /* Color de fondo */
     background-color: greenyellow;
 }
+
 #cuerpo {
-    display: flex; /* Usar flexbox */
+    /* Usa flexbox para la disposición */
+    display: flex;
 }
+
 #contenido {
-    flex: 0.7; /* Ocupa el espacio restante */
+    /* Flexbox: ocupa el espacio restante */
+    flex: 0.7;
 }
 
